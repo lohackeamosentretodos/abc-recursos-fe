@@ -6,33 +6,182 @@
       <div class="tim-title">
         <h3>SOLICITAR</h3>
       </div>
-      <div class="row">
-        <div class="col-sm-6 col-lg-3">
-          <div class="tim-title">
-            <h3><small>Clasificación de Centro de Salud</small></h3>
-          </div>
-          <div *ngFor="let item of list" class="form-check-radio" >
-            <label class="form-check-label">
-              <input class="form-check-input" type="radio" name="hc" id="{{item.id}}" value="{{item.value}}" (click)="getItemSelected(item)" >
-              {{item.title}}
-              <span class="form-check-sign"></span>
-            </label>
-          </div>
-        </div>
 
-        <div class="col-sm-6 col-lg-3">
-          <div class="tim-title">
-            <h3><small>Ubicación (Provincia)</small></h3>
+      <form>
+        <div class="row">
+          <div class="col-sm-12 col-lg-12">
+            <div class="tim-title">
+              <span>Clasificación de Centro de Salud</span>
+            </div>
+            <div class="form-check-radio" *ngFor="let item of list">
+              <label class="form-check-label"  >
+                <input class="form-check-input" type="radio" name="hc" id="{{item.id}}" value="{{item.value}}" (click)="getItemSelected(item)" >
+                {{item.title}}
+                <span class="form-check-sign"></span>
+              </label>
+            </div>
           </div>
-          <div>
-select
-          </div>
-        </div>
-      </div>
 
+          <div class="col-sm-12 col-lg-3">
+            <div class="form-group">
+              <label for="stateSelect">Ubicación (Provincia)</label>
+              <select class="form-control" id="stateSelect">
+                <option *ngFor="let state of states" class="dropdown-item"
+                        value="{{state.value}}" (click)="getSelectedState(state.value)">
+                  {{state.value}}
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <div class="form-group">
+              <label for="city">Ciudad</label>
+              <input type="text" class="form-control" id="city" placeholder="Ingrese ciudad">
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <div class="form-group">
+              <label for="cp">Código Postal</label>
+              <input type="number" class="form-control" id="cp" placeholder="Ingrese Código Postal">
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <div class="form-group">
+              <label for="address">Dirección</label>
+              <input type="text" class="form-control" id="address" placeholder="Ingrese Dirección">
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="form-group">
+              <label for="phone">Teléfono</label>
+              <input type="number" class="form-control" id="phone" placeholder="Ingrese Teléfono" >
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingrese su email" >
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-12">
+            <div class="tim-title">
+              <span>Materiales/ Insumos / Equipos  que puedo PRODUCIR </span>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                Barbijos
+                <span class="form-check-sign">
+                        <span class="check"></span>
+                    </span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                Guantes
+                <span class="form-check-sign">
+                        <span class="check"></span>
+                    </span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                Batas
+                <span class="form-check-sign">
+                        <span class="check"></span>
+                    </span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                Respiradores
+                <span class="form-check-sign">
+                        <span class="check"></span>
+                    </span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                Máscaras
+                <span class="form-check-sign">
+                        <span class="check"></span>
+                    </span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                Otros
+                <span class="form-check-sign">
+                        <span class="check"></span>
+                    </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="form-group">
+              <label for="amount">Cantidad de Materiales/ Insumos / Equipos Requeridos</label>
+              <input type="text" class="form-control" id="amount" placeholder="">
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-12">
+            <div class="form-group">
+              <label for="observations">Observaciones</label>
+              <textarea type="text" class="form-control" id="observations" rows="10" cols="30" placeholder="" ></textarea>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-12">
+            <div class="tim-title">
+              <span>Tiempo estimado para PROVEER EN PUERTA (quizás se manejan tiempos mucho más acotados y definir transporte, quién se ocupa? o es tempo de producción para retirar en fábrica) </span>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                Entre 15 y 20 días
+                <span class="form-check-sign">
+            <span class="check"></span>
+              </span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                de 20 a 30 días
+                <span class="form-check-sign">
+            <span class="check"></span>
+              </span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                Más de 30 días
+                <span class="form-check-sign">
+            <span class="check"></span>
+              </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-12 fields">
+            <button type="submit" class="btn btn-info button">Confirmar</button>
+          </div>
+
+
+        </div>
+      </form>
 
     </div>
   </div>
 </div>
-
 

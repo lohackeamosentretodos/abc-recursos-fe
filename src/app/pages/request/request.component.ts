@@ -40,11 +40,14 @@ export class RequestComponent implements OnInit {
     this.itemSelected = item
   }
 
+  getSelectedState(value: string) {
+    console.log('state', value)
+  }
+
   private getItem = (_id, _title ): ICheckbox => ({
     id: _id,
     title: _title,
     value: _id,
     checked: false
   })
-
 }
