@@ -30,7 +30,10 @@ export class RequestComponent implements OnInit {
       this.getItem(Resources.OTHER, 'Otra')
     ];
 
-    this.states = States.map
+    this.states = States.map((state, index) => ({
+      id: index,
+      value: state,
+    }));
   }
 
   getItemSelected = (item: ICheckbox) => {

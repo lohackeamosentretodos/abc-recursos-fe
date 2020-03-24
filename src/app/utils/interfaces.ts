@@ -6,6 +6,6 @@ export interface ICheckbox {
 }
 
 export interface ISelect {
-  id: string;
+  id: number;
   value: string;
 }
