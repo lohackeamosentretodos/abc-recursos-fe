@@ -1,47 +1,76 @@
 <div class="wrapper">
     <div class="page-header section-dark" style="background-image: url('assets/img/abcrecursos2.png')">
-        <!-- <div class="filter"></div>
-        <div class="content-center">
-            <div class="container">
-                <div class="title-brand">
-                    <div class="angular-logo">
-                        <img src="assets/img/angular2-logo.png" alt="">
-                    </div>
-                    <div class="fog-low">
-                        <img src="assets/img/fog-low.png" alt="">
-                    </div>
-                    <div class="fog-low right">
-                        <img src="assets/img/fog-low.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div> -->
-
     </div>
     <div class="main">
         <div class="section">
             <div class="container">
                 <div class="row example-page">
                     <div class="col-md-4 text-center" routerLinkActive="active">
-                        <a [routerLink]="['/donate']">
+                        <a [routerLink]="['/landing']">
                             <img src="./assets/img/gente.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
-                            <a [routerLink]="['/donate']" class="btn btn-round">Doná</a>
+                            <p class="card-description text-center" style="font-weight: 600;">
+                                No importa tu tamaño, individuo o pyme, vos podés producir. Te decímos cómo.
+                            </p>
+                            <a [routerLink]="['/landing']" class="btn btn-info btn-round">Producir</a>
                         </a>
                     </div>
 
                     <div class="col-md-4 text-center" routerLinkActive="active">
-                        <a [routerLink]="['/produce']">
-                            <img src="./assets/img/hospital.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
-                            <a [routerLink]="['/produce']" class="btn btn-round">Tengo insumos</a>
+                        <a [routerLink]="['/user-profile']">
+                            <img src="./assets/img/hospital.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 358px;height: 233.141px;">
+                            <p class="card-description text-center" style="font-weight: 600;">
+                                Te ayudamos a encontrar a quién, considerando urgencia y necesidad.
+                            </p>
+                            <a [routerLink]="['/user-profile']" class="btn btn-info btn-round">Donar</a>
                         </a>
                     </div>
 
                     <div class="col-md-4 text-center" routerLinkActive="active">
-                        <a [routerLink]="['/request']">
+                        <a [routerLink]="['/user-profile']">
                             <img src="./assets/img/barbijos.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
-                            <a [routerLink]="['/request']" class="btn btn-round">Necesito insumos</a>
+                            <p class="card-description text-center" style="font-weight: 600;">
+                                Sos un efector de salud, u otra organización expuesta. Registrá lo que necesitás aquí.
+                            </p>
+                            <a [routerLink]="['/user-profile']" class="btn btn-info btn-round">Centro de salud</a>
                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section landing-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mr-auto ml-auto">
+                        <h2 class="text-center">¿Necesitas ayuda?</h2>
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Nombre</label>
+                                    <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Nombre" (focus)="focus=true" (blur)="focus=false">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Email</label>
+                                    <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">  <i class="nc-icon nc-email-85"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Email" (focus)="focus1=true" (blur)="focus1=false">
+                                    </div>
+                                </div>
+                            </div>
+                            <label>Mensaje</label>
+                            <textarea class="form-control" rows="4" placeholder="Dejanos tu mensaje..."></textarea>
+                            <div class="row">
+                                <div class="col-md-4 mr-auto ml-auto">
+                                    <button class="btn btn-info btn-lg btn-fill">Enviar mensaje</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
