@@ -9,13 +9,26 @@ import { SignupComponent } from './examples/signup/signup.component';
 import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 
-const routes: Routes =[
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home',             component: ComponentsComponent },
-    { path: 'user-profile',     component: ProfileComponent },
-    { path: 'signup',           component: SignupComponent },
-    { path: 'landing',          component: LandingComponent },
-    { path: 'nucleoicons',      component: NucleoiconsComponent }
+const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home',             component: ComponentsComponent },
+  { path: 'user-profile',     component: ProfileComponent },
+  { path: 'signup',           component: SignupComponent },
+  { path: 'landing',          component: LandingComponent },
+  { path: 'nucleoicons',      component: NucleoiconsComponent },
+  {
+    path: 'request',
+    loadChildren: './pages/request/request.component.module#RequestModule',
+  },
+  {
+    path: 'produce',
+    loadChildren: './pages/produce/produce.component.module#ProduceModule',
+  },
+  {
+    path: 'donate',
+    loadChildren: './pages/donate/donate.component.module#DonateModule',
+  },
+
 ];
 
 @NgModule({

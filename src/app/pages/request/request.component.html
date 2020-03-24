@@ -1,0 +1,38 @@
+<div class="main">
+  <div class="section">
+    <div class="container">
+
+
+      <div class="tim-title">
+        <h3>SOLICITAR</h3>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-3">
+          <div class="tim-title">
+            <h3><small>Clasificación de Centro de Salud</small></h3>
+          </div>
+          <div *ngFor="let item of list" class="form-check-radio" >
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="hc" id="{{item.id}}" value="{{item.value}}" (click)="getItemSelected(item)" >
+              {{item.title}}
+              <span class="form-check-sign"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <div class="tim-title">
+            <h3><small>Ubicación (Provincia)</small></h3>
+          </div>
+          <div>
+select
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
