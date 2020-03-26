@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { DonateComponent } from './pages/donate/donate.component';
+import { RequestComponent } from './pages/request/request.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DonateComponent
+    DonateComponent,
+    RequestComponent
   ],
   imports: [
     BrowserModule
