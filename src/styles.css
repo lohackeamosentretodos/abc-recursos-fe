@@ -1,3 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~bootstrap/dist/css/bootstrap.css";
+
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* Animation site*/ 
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+  
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+  
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width:8px;
+  -webkit-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;  
+}
+
+::-webkit-scrollbar-track {
+  background: #F2F2F2; 
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:#C6C6C6; 
+  border-radius: 5px;
+  -webkit-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;  
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8FCCFF;
+  -webkit-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+::-moz-selection { 
+    background: #34495E;
+    color: #FFF;
+    padding: 10px; 
+}
+
+::selection { 
+    background: #34495E;
+    color: #FFF;
+    padding: 10px; 
+}
