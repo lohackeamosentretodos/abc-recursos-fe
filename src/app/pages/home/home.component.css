@@ -1,0 +1,66 @@
+#section-home{
+    background: url('../../../assets/elements/section-home-background.jpg');
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-box-shadow: inset 0px -10px 15px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 0px -10px 15px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 0px -10px 15px 0px rgba(0,0,0,0.2);
+}
+
+#section-home .brand-home, #section-icons .icons{
+    width: 100%;
+}
+
+#section-home .brand-home img{
+    width: 280px;   
+    display: block; 
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+#section-home .brand-home h1{
+    color: #FFF;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+}
+
+#section-icons{
+    padding-top: 50px;
+}
+
+#section-icons .icons img{
+    width: 130px;   
+    display: block; 
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#section-icons .icons p{
+    color: #4D4D4D;
+    height: 80px;
+    font-size: 18px;
+}
+
+#section-icons .btn-primary{
+    background: #3498DB;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 25px;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+#section-icons .btn-primary:hover{
+    background: #36AD36;
+    border: none;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}

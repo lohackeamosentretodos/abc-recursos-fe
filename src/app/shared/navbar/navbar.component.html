@@ -1,29 +1,33 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">ABC Recursos</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Inicio</a>
+<nav class="navbar navbar-toggler navbar-expand-lg fixed-top navtop">             
+    <div class="container">
+      <a href="index.php" class="navbar-brand" >
+          <img src="assets/brand/brand-horizontal-v1.svg" title="Logo ABC Recursos" alt="Logo ABC Recursos" >
+      </a> 
+      <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-row-reverse"  id="menu">
+        <ul class="navbar-nav navbar-right">
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['home']">Inicio</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Producir</a>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['produce']">Producir</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Donar</a>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['donate']">Donar</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Centro de salud</a>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['request']">Centro de salud</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" routerLinkActive="active">
                 <a class="nav-link" href="#">Pregunta Frecuentes</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" routerLinkActive="active">
                 <a class="nav-link" href="#">Contacto</a>
             </li>
         </ul>
+      </div>
     </div>
-</nav>
+  </nav> 
+  
