@@ -7,6 +7,9 @@ import { DonateComponent } from './pages/donate/donate.component';
 import { ProduceComponent } from './pages/produce/produce.component';
 import { RequestComponent } from './pages/request/request.component';
 import { HomeComponent } from './pages/home/home.component';
+import { TrackingComponent } from './pages/tracking/tracking.component';
+import { FaqComponent } from './pages/faq/faq.component';
+import { SupportComponent } from './pages/support/support.component';
 
 
 const routes: Routes = [
@@ -15,6 +18,9 @@ const routes: Routes = [
   { path: 'donate',     component: DonateComponent },
   { path: 'produce',           component: ProduceComponent },
   { path: 'request',          component: RequestComponent },
+  { path: 'faq',          component: FaqComponent },
+  { path: 'tracking',          component: TrackingComponent },
+  { path: 'support',          component: SupportComponent },
   {
     path: 'request',
     loadChildren: './pages/request/request.component.module#RequestModule',
@@ -27,7 +33,18 @@ const routes: Routes = [
     path: 'donate',
     loadChildren: './pages/donate/donate.component.module#DonateModule',
   },
-
+  {
+    path: 'faq',
+    loadChildren: './pages/faq/faq.component.module#FaqModule',
+  },
+  {
+    path: 'traking',
+    loadChildren: './pages/tracking/tracking.component.module#TrackingModule',
+  },
+  {
+    path: 'support',
+    loadChildren: './pages/support/support.component.module#SupportgModule',
+  },
 ];
 
 @NgModule({
