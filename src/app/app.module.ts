@@ -14,6 +14,7 @@ import { SupportComponent } from './pages/support/support.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { TrackingComponent } from './pages/tracking/tracking.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
