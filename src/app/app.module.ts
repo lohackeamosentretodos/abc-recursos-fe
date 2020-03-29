@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SupportComponent } from './pages/support/support.component';
+import { FaqComponent } from './pages/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SupportComponent } from './pages/support/support.component';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    SupportComponent
+    SupportComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
