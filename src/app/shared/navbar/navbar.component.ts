@@ -10,6 +10,9 @@ declare var $:any;
 export class NavbarComponent implements OnInit {
 
   ngAfterViewInit(){
+    $('.third-button').on('click', function () {
+      $('.animated-icon3').toggleClass('open');
+    });
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
       if ($(this).scrollTop() > 20){
