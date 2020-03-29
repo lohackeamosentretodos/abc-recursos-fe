@@ -12,6 +12,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SupportComponent } from './pages/support/support.component';
 import { FaqComponent } from './pages/faq/faq.component';
+import { TrackingComponent } from './pages/tracking/tracking.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FaqComponent } from './pages/faq/faq.component';
     NavbarComponent,
     FooterComponent,
     SupportComponent,
-    FaqComponent
+    FaqComponent,
+    TrackingComponent
   ],
   imports: [
     BrowserModule,
