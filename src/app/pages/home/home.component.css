@@ -26,6 +26,7 @@
     font-size: 22px;
     line-height: 28px;
     text-align: center;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 #section-icons{
@@ -43,6 +44,7 @@
     color: #4D4D4D;
     height: 80px;
     font-size: 16px;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 #section-icons .btn-primary{
@@ -54,6 +56,7 @@
     -moz-transition: all 300ms ease-out;
     -o-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 #section-icons .btn-primary:hover{
@@ -71,6 +74,7 @@
 
 #section-cards h2{
     color: #4D4D4D;
+    font-family: 'Montserrat', sans-serif !important;
 }
 #section-cards .card{
     background: #E5E5E5;
@@ -81,12 +85,14 @@
 #section-cards .card .card-title{
     font-size: 16px;
     color: #4D4D4D;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 #section-cards .card .card-text{
     font-size: 14px;
     color: #4D4D4D;
     margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 #section-cards .card .card-img-top{
@@ -105,6 +111,7 @@
     -o-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
     text-align: center !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 #section-cards .btn-primary:hover{
     background: #36AD36;
@@ -127,6 +134,8 @@
 #section-counters h3{
     color: #4D4D4D;
     margin-bottom: 50px;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 #section-counters .title-number{
@@ -138,16 +147,19 @@
     -webkit-text-fill-color: transparent;
     margin-bottom: 0;
     line-height: 50px;
+    font-family: 'Montserrat', sans-serif !important;
 }
 #section-counters .text{
     font-weight: 400;
     font-size: 20px;
     margin-top: 15px;
     color: #4D4D4D;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 #section-cta-tracking, #section-cta-about{
     margin-top: 50px;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 #section-cta-tracking h3{
@@ -155,11 +167,13 @@
     font-size: 40px;
     margin-top: 40px;
     color: #4D4D4D;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 #section-cta-tracking p {
     color: #4D4D4D;
     font-size: 16px;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 #section-cta-tracking .btn-primary{
@@ -172,6 +186,7 @@
     -o-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
     text-align: center !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 #section-cards .btn-primary:hover{
@@ -203,15 +218,18 @@
     transition: all 300ms ease-out;
 }
 
+#section-cta-about h3 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 40px;
+}
+
 #section-cta-about p {
     color: #4D4D4D;
     font-size: 16px;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 @media (max-width: 786px) {
-    .is-desktop {
-      display: none;
-    }
     #section-icons .icons p{
         height: auto;
         font-size: 16px;
@@ -230,6 +248,7 @@
     #section-cta-tracking h3, #section-cta-about h3{
         font-size: 28px;
         margin-top: 20px;
+        font-family: 'Montserrat', sans-serif !important;
     }
     #section-counters .title-number{
         font-weight: 700;
