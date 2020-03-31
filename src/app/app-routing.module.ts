@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { TrackingComponent } from './pages/tracking/tracking.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { SupportComponent } from './pages/support/support.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'faq',          component: FaqComponent },
   { path: 'tracking',          component: TrackingComponent },
   { path: 'support',          component: SupportComponent },
+  { path: 'contact',          component: ContactComponent },
   {
     path: 'request',
     loadChildren: './pages/request/request.component.module#RequestModule',
@@ -44,6 +46,10 @@ const routes: Routes = [
   {
     path: 'support',
     loadChildren: './pages/support/support.component.module#SupportgModule',
+  },
+  {
+    path: 'contact',
+    loadChildren: './pages/contact/contact.component.module#ContactModule',
   },
 ];
 
