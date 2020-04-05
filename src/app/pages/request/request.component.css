@@ -1,17 +1,58 @@
-    .atras {
-        margin-right: 16px;
-    }
+.atras {
+    margin-right: 16px;
+}
     
-    .gracias {
-        font-family: 'Montserrat', sans-serif !important;
-        font-size: 22px;
-        line-height: 28px;
-        color: #3498DB;
-        font-weight: 600;
-    }
+.gracias {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 22px;
+    line-height: 28px;
+    color: #3498DB;
+    font-weight: 600;
+}
     
-    .correo {
-        font-family: 'Montserrat', sans-serif !important;
-        font-size: 18px;
-        line-height: 28px;
-    }
+.correo {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px;
+    line-height: 28px;
+}
+    
+.form-request .btn-primary{
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    background: #3498DB;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 25px;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.form-request .btn-primary:hover{
+    background: #36AD36;
+    border: none;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.form-request .btn-default{
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);    border-radius: 20px;
+    padding: 5px 25px;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.form-request .btn-default:hover{
+    background: #CCC;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
