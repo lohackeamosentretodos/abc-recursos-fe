@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Colaboración
+
+ABC Recursos es un proyecto open source. Si estás interesad@ en formar parte y aportar tus conocimientos, por favor escribí a micaelairibarrenmora@gmail.com.
+
+## Equipo
+
+Miembros:
+-Ricardo Pasquini, Micaela Iribarren, Ezequiel Bar Coch, Tomás Caimmi, Eliana Guinta, Francisco Frontalini, Guillermo Bustelo, Matias Camusso
+
+## Licencia
+
+  ABC-Recursos-API es [MIT licensed](LICENSE).

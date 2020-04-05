@@ -1,0 +1,17 @@
+.atras {
+    margin-right: 16px;
+}
+
+.gracias {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 22px;
+    line-height: 28px;
+    color: #3498DB;
+    font-weight: 600;
+}
+
+.correo {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px;
+    line-height: 28px;
+}

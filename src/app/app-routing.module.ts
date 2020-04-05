@@ -11,7 +11,7 @@ import { TrackingComponent } from './pages/tracking/tracking.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { SupportComponent } from './pages/support/support.component';
 import { SearchComponent } from './pages/search/search.component';
-
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -23,6 +23,7 @@ const routes: Routes = [
   { path: 'tracking',          component: TrackingComponent },
   { path: 'support',          component: SupportComponent },
   { path: 'search/:text',          component: SearchComponent },
+  { path: 'contact',          component: ContactComponent },
   {
     path: 'request',
     loadChildren: './pages/request/request.component.module#RequestModule',
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: 'support',
     loadChildren: './pages/support/support.component.module#SupportgModule',
+  },
+  {
+    path: 'contact',
+    loadChildren: './pages/contact/contact.component.module#ContactModule',
   },
 ];
 
