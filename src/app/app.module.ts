@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { RequestService } from './services/request.service';
+
 import { AppComponent } from './app.component';
 import { DonateComponent } from './pages/donate/donate.component';
 import { RequestComponent } from './pages/request/request.component';
@@ -15,6 +17,9 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { TrackingComponent } from './pages/tracking/tracking.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SearchComponent } from './pages/search/search.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -28,15 +33,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SupportComponent,
     FaqComponent,
     TrackingComponent,
-    ContactComponent
+    ContactComponent,
+    SearchComponent 
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     RouterModule,
     BrowserAnimationsModule,
+    MatTableModule
   ],
-  providers: [],
+  providers: [
+    RequestService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

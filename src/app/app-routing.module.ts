@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { TrackingComponent } from './pages/tracking/tracking.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { SupportComponent } from './pages/support/support.component';
+import { SearchComponent } from './pages/search/search.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'faq',          component: FaqComponent },
   { path: 'tracking',          component: TrackingComponent },
   { path: 'support',          component: SupportComponent },
+  { path: 'search/:text',          component: SearchComponent },
   {
     path: 'request',
     loadChildren: './pages/request/request.component.module#RequestModule',
