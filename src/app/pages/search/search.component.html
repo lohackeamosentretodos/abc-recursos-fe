@@ -1,0 +1,65 @@
+<div class="animated fadeIn fast page-container">
+  <section class="section-header-complete no-found animated fadeIn" *ngIf="requests.length == 0">
+      <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-12 col-md-5">
+                <h1>Seguimiento de solicitudes</h1>
+                <div class="alert alert-info" role="alert">
+                  No existen ninguna solicitud con el código: {{ (text.length>50)? (text | slice:0:50)+'..':(text)  }}
+                </div>
+                <a (click)="goBack()" class="btn btn-outline-primary" type="button">Volver</a>
+            </div>
+            <div class="col-12 offset-md-2 col-md-5 background-special is-desktop">
+              <img src="assets/elements/background-search.png" width="100%" >
+            </div>
+        </div>
+      </div>
+  </section>
+  <section class="section-header-complete found animated fadeIn" *ngIf="requests.length != 0">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-12">
+          <h1>Tu solicitud</h1>
+          <mat-table [dataSource]="dataSource" matSort>
+
+            <ng-container matColumnDef="cod">
+              <mat-header-cell *matHeaderCellDef mat-sort-header> Código de Seguimiento </mat-header-cell>
+              <mat-cell *matCellDef="let row"> {{ row.cod}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="applicant">
+              <mat-header-cell *matHeaderCellDef mat-sort-header> Solicitante </mat-header-cell>
+              <mat-cell *matCellDef="let row"> {{ row.name }} {{ row.lastname }} </mat-cell>
+            </ng-container>
+
+
+            <ng-container matColumnDef="company">
+              <mat-header-cell *matHeaderCellDef mat-sort-header> Razón Social </mat-header-cell>
+              <mat-cell *matCellDef="let row"> {{ row.company }} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="request">
+              <mat-header-cell *matHeaderCellDef mat-sort-header> Solicitud </mat-header-cell>
+              <mat-cell *matCellDef="let row"> {{ row.request }}</mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="state">
+              <mat-header-cell *matHeaderCellDef mat-sort-header> Estado </mat-header-cell>
+              <mat-cell *matCellDef="let row"> {{ row.state }}</mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="received">
+              <mat-header-cell *matHeaderCellDef mat-sort-header> Recibido </mat-header-cell>
+              <mat-cell *matCellDef="let row">{{ row.received }} </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;">
+            </mat-row>
+          </mat-table>
+          <a [routerLink]="['/home']" class="btn btn-outline-primary" type="button">Volver</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

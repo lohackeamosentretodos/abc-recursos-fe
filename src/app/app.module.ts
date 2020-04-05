@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { RequestService } from './services/request.service';
+
 import { AppComponent } from './app.component';
 import { DonateComponent } from './pages/donate/donate.component';
 import { RequestComponent } from './pages/request/request.component';
@@ -15,6 +17,8 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { TrackingComponent } from './pages/tracking/tracking.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SearchComponent } from './pages/search/search.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import {MatInputModule} from '@angular/material/input';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
@@ -58,10 +62,12 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     SupportComponent,
     FaqComponent,
     TrackingComponent,
-    ContactComponent
+    ContactComponent,
+    SearchComponent 
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     RouterModule,
     BrowserAnimationsModule,
@@ -96,7 +102,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatPaginatorModule,
     MatCheckboxModule
   ],
-  providers: [],
+  providers: [
+    RequestService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
