@@ -153,6 +153,7 @@ body {
   border-top-color: #36AD36;
 }
 
+
 @media (max-width: 786px) {
   .is-desktop {
     display: none;

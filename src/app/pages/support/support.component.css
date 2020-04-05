@@ -8,6 +8,62 @@ h3 {
 .servicios {
     color: #4D4D4D;
     margin-top: 50px;
+    margin-bottom: 20px;
     font-size: 28px;
+    line-height: 34px;
     font-family: 'Montserrat', sans-serif !important;
+}
+
+.section-header-complete {
+    height: 60vh;
+    padding-top: 100px;
+    background: rgba(52,152,219,1);
+    background: -moz-linear-gradient(45deg, rgba(52,152,219,1) 16%, rgba(52,152,219,1) 31%, rgba(54,173,54,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(16%, rgba(52,152,219,1)), color-stop(31%, rgba(52,152,219,1)), color-stop(100%, rgba(54,173,54,1)));
+    background: -webkit-linear-gradient(45deg, rgba(52,152,219,1) 16%, rgba(52,152,219,1) 31%, rgba(54,173,54,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(52,152,219,1) 16%, rgba(52,152,219,1) 31%, rgba(54,173,54,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(52,152,219,1) 16%, rgba(52,152,219,1) 31%, rgba(54,173,54,1) 100%);
+    background: linear-gradient(45deg, rgba(52,152,219,1) 16%, rgba(52,152,219,1) 31%, rgba(54,173,54,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3498db', endColorstr='#36ad36', GradientType=1 );
+    -webkit-box-shadow: inset 0px -10px 15px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 0px -10px 15px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 0px -10px 15px 0px rgba(0,0,0,0.2);
+  }
+    
+  .section-header-complete h1 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 46px;
+    line-height: 48px;
+    color: #FFF;
+    font-weight: 600;
+  }
+  
+  .section-header-complete p {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFF;
+  }
+  
+  .section-header-complete .btn-outline-primary{
+    margin-top: 20px;
+    border-color: #FFF;
+    color: #FFF;
+  }
+    
+  .background-special {
+    opacity: 0.8;
+    mix-blend-mode:  hard-light;
+  }
+  
+.section-about {
+    padding-top: 50px;
+  
+}
+  
+.section-about .icons img{
+    width: 130px;   
+    display: block; 
+    margin: auto;
+    margin-bottom: 20px;
 }
